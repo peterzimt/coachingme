@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "The Middleman" %></title>
+
+    <%= stylesheet_link_tag "all" %>
+    <%= javascript_include_tag  "all" %>
+
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+     <link href='http://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+
+    <link href="css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="120" >
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    
+
+    <div id="header">
+        <div class="bg-overlay"></div>
+            <div id="menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="ion-navicon"></i>
+                        </button>
+                        <a class="navbar-brand" href="#"><h2>CoachingMe</h2></a>
+                    </div><!-- navbar-header -->
+                <div id="navbar" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#video">Video</a></li>
+                        <li><a href="#story">Quien soy yo</a></li>
+                        <li><a href="#gallery">Beneficios del Coaching</a></li>
+                        <li><a href="#footer">Proceso del Coaching</a></li>
+
+                    </ul>
+                </div><!--/.navbar-collapse -->
+                </div><!-- container -->
+            </div><!-- menu -->
+
+
+    <%= yield %>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="footer-content">
+                        <div class="wow animated fadeInDown">
+                            <p>newsletter signup</p>
+                            <p>Get Cool Stuff! We hate spam!</p>
+                        </div>
+                        <form action="#" method="post" class="subscribe-form wow animated fadeInUp">
+                            <div class="input-field">
+                                <input type="email" class="subscribe form-control" placeholder="Enter Your Email...">
+                                <button type="submit" class="submit-icon">
+                                    <i class="fa fa-paper-plane fa-lg"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="footer-social">
+                            <ul>
+                                <li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="https://www.facebook.com/CoachingMedotCo"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
+                                <li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
+                                <li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-skype fa-3x"></i></a></li>
+                                <li class="wow animated zoomIn" data-wow-delay="0.9s"><a href="#"><i class="fa fa-dribbble fa-3x"></i></a></li>
+                                <li class="wow animated zoomIn" data-wow-delay="1.2s"><a href="#"><i class="fa fa-youtube fa-3x"></i></a></li>
+                            </ul>
+                        </div>
+                        
+                        <p>Copyright &copy; 2014-2015 Design and Developed By <br><a href="http://www.happyendingmarketing.com">Happy Ending Marketing</a> </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+    <script src="js/jquery.actual.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/jquery.parallax.min.js"></script>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+
+</body>
+</html>

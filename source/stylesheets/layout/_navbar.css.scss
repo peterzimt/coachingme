@@ -1,0 +1,86 @@
+
+<!-- /* ==========================================================================
+ Navigation 
+========================================================================== */-->
+#menu {
+    background: rgba(211, 230, 231, 1);
+    margin-bottom:0;
+    border-color: #55cbd2;
+    background: #55cbd2;
+}
+.navbar-brand h2 {
+    margin-top:0;
+    font-weight:bold;
+    text-shadow: none;
+}
+.navbar-brand {
+    padding-top:8px;
+    padding-bottom:0;
+}
+.navbar-inverse .navbar-nav>li>a {
+    -webkit-transition:all 0.4s;
+    -moz-transition:all 0.4s;
+    -o-transition:all 0.4s;
+    transition:all 0.4s;
+    font-weight:bold;
+    text-shadow: none;
+}
+.navbar-inverse .navbar-nav>li>a:hover,.navbar-inverse .navbar-nav>.active>a {
+    background: #55cbd2;
+    color:white;
+    text-shadow:none;
+    -webkit-box-shadow: inset 0 3px 9px rgba(0,0,0,.25); 
+    box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-brand h2, .navbar-inverse .navbar-nav>li>a{
+    color: #4D949E;
+    color: white;
+}
+.navbar-toggle {
+    font-size: 2.5em;
+    padding: 0px;
+    border: 0px;
+    margin: 0px 15px 0px 0px;
+    color: white;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background: transparent;
+    color: darkcyan;
+}
+
+
+
+
+.signupForm {
+    background: #55cbd2;
+    padding: 16px 0;
+}
+.signupForm .form-control {
+    background: transparent;
+    border-radius: 0;
+    border: 2px solid white;
+    color: white;
+}
+.signupForm .btn-primary {
+    background: #000000;
+    border-radius: 0;
+    box-shadow: none;
+    border: 2px solid black;
+    transition: all 0.4s;
+}
+.signupForm .btn-primary:hover {
+    background: white;
+    color: #55cbd2;
+    border-color: #9CDEE2;
+}
+
+.signupForm .btn-primary:focus {
+    outline: none;
+}
+
+/* do not group these rules */
+.form-control::-webkit-input-placeholder { color:#fff; }
+.form-control::-moz-placeholder { color:#fff; } /* firefox 19+ */
+.form-control:-ms-input-placeholder { color:#fff; } /* ie */
+input:-moz-placeholder { color:#fff; }
